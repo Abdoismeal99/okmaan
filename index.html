@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loley store</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2> mmm store</h2>
+            <h4> system mangement </h4>
+        </div>
+   
+    <div class="input">
+            <div class="details">
+            <input type="text" id="title" placeholder="اسم المنتج">
+            <input type="number" id="price" placeholder="السعر">
+            <input type="text" id="code" placeholder="كود المنتج ">
+            <input type="number" id="count" placeholder="عدد القطع">
+             <input type="text" id="color" placeholder="لون القطعه">
+             <input type="text" id="x" placeholder="مقاس القطعه">
+
+           
+            </div>
+
+                    <input type="text" id="category" placeholder="التصنيف">
+                    <button id="addBtn">اضافه</button>
+    </div>  
+    <div class="output">
+         <div class="searchBLocks">
+            <input onkeyup="searchData(this.value)" id="search" type="text" placeholder="بحث">
+                   <div class="btnsearch">
+                       <button onclick="getSearchMood(this.id)" id="searchbyname">بحث بواسطه اسم المنتج</button>
+                       <button onclick="getSearchMood(this.id)" id="searchbycode">بجث بواسطه الكود</button>
+                   </div>
+                                            <div id="deleteAll">
+                                                
+                                            </div>
+                            <table>
+                                <th> رقم المنتج</th>
+                                <th> كود المنتج</th>
+                                <th> اسم المنتج </th>
+                                <th>سعر المنتج </th>
+                                <th>النوع</th>
+                                <th>لون القطعه</th>
+                                <th>مقاس القطعه</th>
+                                <th>اتباع</th>
+                                <th>تعديل</th>
+                                <tbody id="tbody">
+                                     
+                                    
+
+                                 </tbody>         
+
+                            </table>
+         </div>
+    </div>
+</div>
+    <script src="index.js"></script>
+</body>
+</html>
